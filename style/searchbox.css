@@ -1,0 +1,112 @@
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .search-box {
+        padding-left: 9px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-radius: 7px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(198, 194, 194);
+    }
+    
+    .search-box:focus {
+        background-color: rgb(232, 232, 232);
+        outline: none;
+        /*outline*/
+    }
+    
+    .long-searchbox {
+        padding-left: 9px;
+        padding-right: 100px;
+        width: 20%;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-radius: 17px;
+        outline: none;
+        border: none;
+        box-shadow: 1px 1px 10px rgb(164, 164, 164);
+    }
+    
+    .line-1 {
+        margin-bottom: 5px;
+    }
+    
+    .email-enter {
+        margin-top: 0px;
+        padding-right: 15%;
+    }
+    
+    .line-2 {
+        color: rgb(48, 48, 48);
+    }
+    
+    .button {
+        color: white;
+        background-color: rgb(52, 126, 255);
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        margin-left: 5px;
+        border-radius: 24px;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    
+    .button:hover {
+        opacity: 0.9;
+    }
+    
+    .twitter {
+        display: flex;
+        /*Display*/
+        align-items: center;
+        border-color: black;
+        border-width: 2x;
+        width: 340px;
+        box-shadow: 1px 1px 8px rgb(185, 185, 185);
+        justify-content: space-around;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    .image {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+    }
+    
+    .text-box {
+        border: none;
+        outline: none;
+        padding-left: 1%;
+    }
+    
+    .text-box:focus {
+        border: none;
+        outline: none;
+    }
+    
+    .tweet-button {
+        margin-left: 7%;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+        border-radius: 24px;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(52, 133, 255);
+        color: white;
+    }
+    
+    .tweet-button:hover {
+        opacity: 0.8;
+    }
