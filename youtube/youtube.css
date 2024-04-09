@@ -1,12 +1,41 @@
-.tumbnail-1 {
-    width: 300px;
-}
-
-.tumbnail-2 {
-    width: 300px;
-    height: 168px;
-    object-fit: cover;
-    /* border-color: black;
-    border-width: 2px;
-       */
-}
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+    
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .search {
+        display: block;
+    }
+    
+    .container-1,
+    .container-2,
+    .container-3 {
+        display: inline-block;
+        /* background-color: red; */
+        width: 300px;
+        vertical-align: top;
+        margin-right: 15px;
+    }
+    
+    .tumbnail-1 {
+        width: 300px;
+    }
+    
+    .line-1 {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        font-size: 19px;
+    }
+    
+    .line-2 {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .line-3 {
+        margin-top: 5px;
+    }
