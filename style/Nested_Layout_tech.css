@@ -1,0 +1,93 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-div,
+.main-div-2 {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 70px;
+}
+
+.main-div:hover,
+.main-div-2:hover {
+    box-shadow: 0px 0px 10px rgb(174, 174, 174);
+}
+
+.text-div,
+.profile-div,
+.button {
+    display: inline-block;
+    /* vertical-align: top; */
+}
+
+.text-div {
+    width: 140px;
+}
+
+.profile-div {
+    /* border: 1px solid black; */
+    width: 70px;
+    height: 70px;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.line-1 {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.line-2 {
+    margin-bottom: 2px;
+}
+
+.line-3 {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.line-2,
+.line-3 {
+    color: rgb(117, 117, 117);
+}
+
+.profile {
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 40px;
+    width: 60px;
+}
+
+.button {
+    vertical-align: top;
+    height: 70px;
+}
+
+.follow {
+    /* display: block; */
+    width: 70px;
+    margin-top: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(49, 111, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.follow:hover {
+    opacity: 0.9;
+    box-shadow: 0px 0px 4px black;
+}
+
+.main-div-2 {
+    margin-top: 20px;
+}
