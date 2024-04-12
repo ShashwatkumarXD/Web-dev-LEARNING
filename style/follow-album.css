@@ -1,0 +1,75 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    /* cursor: none; */
+}
+
+.main-div {
+    width: 300px;
+    display: grid;
+    grid-template-rows: auto 50px 50px 50px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 10px rgba(119, 119, 119, 0.786);
+}
+
+.profile {
+    /* background-color: pink; */
+    width: 100%;
+}
+
+
+/* .name {
+    /* background-color: rgba(0, 0, 255, 0.263); */
+
+.sub-main {
+    display: grid;
+    grid-template-columns: 45px 2fr;
+}
+
+.mutual,
+.mutual-img {
+    /* object-fit: cover; */
+    /* display: flex; */
+    /* justify-content: center; */
+    border-radius: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    /* width: 40px; */
+}
+
+
+/* .text-div {
+    /* background-color: rgba(0, 195, 255, 0.601); */
+
+
+/* } */
+
+.name-1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.button {
+    margin-left: 95px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(0, 106, 255, 0.704);
+    color: white;
+    outline: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    outline: none;
+    opacity: 0.8;
+}
+
+.outter {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 320px 320px 320px;
+}
