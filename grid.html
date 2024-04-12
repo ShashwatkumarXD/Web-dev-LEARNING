@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ok,
+        .oke,
+        .okey {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        
+        .oke {
+            margin-top: 10px;
+        }
+        
+        .okey {
+            margin-top: 30px;
+            height: 100px;
+            grid-template-rows: auto 100px;
+        }
+        
+        .a1 {
+            background-color: rgba(0, 162, 255, 0.46);
+        }
+        
+        .a2 {
+            background-color: pink;
+        }
+        
+        .a3,
+        .a4,
+        .a5,
+        .a6,
+        .a7,
+        .a8 {
+            background-color: rgba(165, 42, 42, 0.481);
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Example 1(using grid)</p>
+    <div class="ok">
+        <div class="a1">div-1</div>
+        <div class="a2">div-2</div>
+    </div>
+    <div class="oke">
+        <div class="a1">
+            div-1
+        </div>
+        <div class="a2">
+            div-2
+            <p>text</p>
+        </div>
+    </div>
+    <p>Example-2 (using Grid Equal from each side)</p>
+    <div class="okey">
+        <div class="a7">
+            div-1<br>okayyyyyy<br>okkkkkkkkk<br>aaaaaaa<br><br> </div>
+        <div class="a8">
+            div-2
+            <p>text</p>
+        </div>
+        <div class="a3">div-2</div>
+        <div class="a4">div-2</div>
+        <div class="a5">div-2</div>
+        <div class="a6">div-2</div>
+    </div>
+</body>
+
+</html>
