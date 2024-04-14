@@ -1,0 +1,23 @@
+.sub-div3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 60px;
+}
+
+.main-div3 {
+    width: 400px;
+    border: 1px solid black;
+}
+
+.text-div3 {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.button-follow {
+    font-size: 18px;
+    padding: 5px 10px;
+}
