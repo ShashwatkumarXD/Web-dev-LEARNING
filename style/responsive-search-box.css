@@ -1,0 +1,33 @@
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: lightblue; */
+    /* border: none; */
+    /* justify-content: center; */
+}
+
+.img-div {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-div {
+    height: 70px;
+    display: flex;
+    /* background-color: pink; */
+    align-items: center;
+    width: 50%;
+}
+
+.search-div input {
+    flex: auto;
+    height: 34px;
+    border: none;
+    outline: none;
+    ;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 15px;
+    box-shadow: 1px 1px 10px rgb(151, 151, 151);
+}
