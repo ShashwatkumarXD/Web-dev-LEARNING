@@ -1,74 +1,72 @@
-            .main-div2 {
-                height: 55px;
-                display: flex;
-                background-color: rgb(140, 0, 255);
-                flex-direction: row;
-                justify-content: space-between;
-                margin-left: 220px;
-                margin-right: 250px
-            }
-            
-            .div-left {
-                width: 50px;
-                padding-left: 30px;
-                /* background-color: lightskyblue; */
-                align-items: center;
-            }
-            
-            .div-right {
-                width: 120px;
-                /* background-color: lightskyblue; */
-                display: flex;
-            }
-            
-            .div-center {
-                /* background-color: pink; */
-                flex: 1;
-                margin-left: 160px;
-                margin-right: 100px;
-                display: flex;
-                align-items: center;
-                max-width: 500px;
-                background-color: rgb(140, 0, 255);
-            }
-            
-            .search {
-                /* margin-top: 8px;
-                margin-right: 10px;
-                flex: 1; */
-                flex: 1;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-left: 18px;
-                padding-right: 310px;
-                border-radius: 50px;
-                outline: none;
-                border: none;
-            }
-            
-            .text-div2 {
-                font-weight: bold;
-                margin-top: 17px;
-                color: white;
-                cursor: pointer;
-            }
-            
-            .text-div2:hover {
-                text-shadow: 1px 1px 10px black;
-            }
-            
-            .download {
-                padding: 10px 15px;
-                font-size: 17px;
-                margin-top: 5px;
-                border-color: white;
-                border-style: solid;
-                background-color: rgb(140, 0, 255);
-                color: white;
-                cursor: pointer;
-            }
-            
-            .download:hover {
-                background-color: rgb(121, 0, 220);
-                box-shadow: 1px 1px 10px black;
-            }
+/* .f12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.child-div {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    background-color: rgb(166, 65, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+    min-width: 500px;
+}
+
+.middle-div {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text:hover {
+    text-shadow: 1px 1px 10px black;
+}
+
+.left-div {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.right-div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.button-12f {
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: rgb(166, 65, 255);
+    border: solid white;
+    color: white;
+    font-weight: 700;
+    /* border-radius: 10px; */
+    cursor: pointer;
+}
+
+.button-12f:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.756);
+    background-color: rgb(162, 55, 255);
+}
+
+.search {
+    flex: 1;
+    height: 35px;
+    padding-left: 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.search:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.542);
+}
