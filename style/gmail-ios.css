@@ -1,0 +1,13 @@
+.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-div2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {}
+
+.image {}
