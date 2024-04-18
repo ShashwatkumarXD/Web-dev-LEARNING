@@ -1,0 +1,42 @@
+.body-1 {
+    height: 200px;
+    background-color: pink;
+    /* width: 300px; */
+    /* margin-left: 100px */
+    margin-bottom: 10px;
+}
+
+.body-2 {
+    /* margin-left: 100px; */
+    margin-bottom: 10px;
+    background-color: lightblue;
+    /* width: 300px; */
+    height: 200px;
+}
+
+.main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding-top: 80px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sidebar {
+    background-color: green;
+    color: white;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+}
