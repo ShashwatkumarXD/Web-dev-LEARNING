@@ -8,6 +8,7 @@
     /* padding-top: 2px; */
     box-shadow: inset 1px 1px 10px rgb(190, 190, 190);
     border-radius: 5px;
+    position: relative;
 }
 
 .image-div {
@@ -80,8 +81,8 @@ p {
     align-items: center;
     position: absolute;
     bottom: 0;
-    /* transition:  opacity 0.8s; */
     opacity: 0;
+    transition: opacity 0.4s;
     cursor: pointer;
 }
 
@@ -91,5 +92,26 @@ p {
 }
 
 .img-hover:hover {
+    opacity: 1;
+}
+
+.text-hover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.273);
+    color: white;
+    z-index: 100;
+    bottom: 36px;
+    right: 28px;
+    border-radius: 2px;
+    font-size: small;
+    box-shadow: 1px 1px 10px rgb(177, 177, 177);
+    /* padding: 100px  100px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.text-hover:hover .text-div {
     opacity: 1;
 }
