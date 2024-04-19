@@ -14,8 +14,9 @@
     }
     
     l .sub-main {
-        display: grid;
-        grid-template-columns: 45px 2fr;
+        display: flex;
+        /* grid-template-columns: 45px 2fr; */
+        flex-direction: row;
     }
     
     .mutual,
