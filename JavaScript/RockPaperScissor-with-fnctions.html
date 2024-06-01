@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor GAME</title>
+</head>
+
+<body>
+    <!--Steps(Algorithm) 
+      1.Computerrandomly selects a move 
+      2. compare the moves to get the result 
+      3. Display the resultin a pop -->
+    <p>Rock Paper Scissors</p>
+    <div>
+        <button onclick="// Onclick is user input
+          const RandomNumber = Math.random();
+          let computerMove='';
+          //If we divide the line from 0 to 1 into 3 part we get 0-1/3, 1/3-2/3 & 2/3-1
+//Computer Randomly selects a move
+          if(RandomNumber >= 0 && RandomNumber < 1/3){
+            computerMove='Rock';
+          }
+          else if(RandomNumber >= 1/3 && RandomNumber< 2/3){
+            computerMove='Paper';
+          }
+          else if(RandomNumber >=2/3 && RandomNumber < 1){
+            computerMove='Scissors';
+          }
+          console.log(computerMove);
+// comparing the moves to get the result
+          let result='';
+          
+          if(computerMove === 'Rock'){
+          result= 'TIE.'
+          }
+          else if(computerMove === 'Paper'){
+          result= 'YOU LOSE.'
+          }
+          else if(computerMove === 'Scissors'){
+          result= 'YOU WIN.'
+          }
+          alter(`You picked ROCK and Computer picked ${computerMove}\n ${result}`);
+          
+          ">Rock</button>
+
+        <button onclick="// Onclick is user input
+        const RandomNumber1 = Math.random();
+        let computerMove1='';
+        //If we divide the line from 0 to 1 into 3 part we get 0-1/3, 1/3-2/3 & 2/3-1
+        //Computer Randomly selects a move
+        if(RandomNumber1 >= 0 && RandomNumber1 < 1/3){
+          computerMove1='Rock';
+        }
+        else if(RandomNumber1 >= 1/3 && RandomNumber1< 2/3){
+          computerMove1='Paper';
+        }
+        else if(RandomNumber1 >=2/3 && RandomNumber1 < 1){
+          computerMove1='Scissors';
+        }
+        console.log(computerMove1);
+        
+        if(computerMove1 === 'Rock'){
+          result1= 'YOU WIN.'
+        }
+        else if(computerMove1 === 'Paper'){
+          result1= 'TIE.'
+        }
+        else if(computerMove1 === 'Scissors'){
+          result1= 'YOU LOSE.'
+        }
+        alter(`You picked PAPER and Computer picked ${computerMove1}\n ${result1}`);
+
+        ">Paper</button>
+
+        <button onclick="// Onclick is user input
+        const RandomNumber2 = Math.random();
+        let computerMove2='';
+        //If we divide the line from 0 to 1 into 3 part we get 0-1/3, 1/3-2/3 & 2/3-1
+        //Computer Randomly selects a move
+        if(RandomNumber2 >= 0 && RandomNumber2 < 1/3){
+          computerMove2='Rock';
+        }
+        else if(RandomNumber2 >= 1/3 && RandomNumber2< 2/3){
+          computerMove2='Paper';
+        }
+        else if(RandomNumber2 >=2/3 && RandomNumber2 < 1){
+          computerMove2='Scissors';
+        }
+        console.log(computerMove2);
+        // comparing the moves to get the result
+        let result2='';
+
+        if(computerMove2 === 'Rock'){
+          result2= 'YOU WIN.'
+        }
+        else if(computerMove2 === 'Paper'){
+          result2= 'TIE.'
+        }
+        else if(computerMove2 === 'Scissors'){
+          result= 'YOU LOSE.'
+        }
+        alter(`You picked PAPER and Computer picked ${computerMove1}\n ${result1}`);
+
+        ">Scissors</button>
+    </div>
+    <script>
+        // const RandomNumber = Math.random();
+    </script>
+</body>
+
+</html>
