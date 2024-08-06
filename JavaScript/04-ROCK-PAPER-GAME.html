@@ -30,13 +30,17 @@
     score.Wins=0;
     score.Lose=0;
     score.Tie=0;
+    localStorage.removeItem('score');
     ">Reset Score</button>
     <script>
-        const score = {
+        let score = JSON.parse(localStorage.getItem('score')) || {
             Wins: 0,
             Lose: 0,
             Tie: 0
-        };
+        }; // here we fatch the data from the local storage and converted back to the javascript object. Using(JSON.parse)
+
+        // It take the stored item and display it.
+        console.log(JSON.parse(localStorage.getItem('score')));
 
         function playGame(playerMove) {
             const computerMove = pickComputerMove();
@@ -80,6 +84,9 @@
                 score.Lose += 1;
             }
 
+            // To Store the item in local storage.
+            localStorage.setItem('score', JSON.stringify(score));
+
             alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
 Wins: ${score.Wins}, Lose: ${score.Lose}, Tie: ${score.Tie}`);
         }
@@ -103,3 +110,10 @@ Wins: ${score.Wins}, Lose: ${score.Lose}, Tie: ${score.Tie}`);
 </body>
 
 </html>
+
+<!--NOTE: 
+    To Convert Javascript object to JSON
+        JSON.stringly();
+    
+    And back into JSON to Javascript
+        JSON.parse();-->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .CountDown-container {
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    .CountDown-timer {
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="CountDown-container">
+        <div class="CountDown-timer" id="CountDown"></div>
+        <div class="CountDown-label">Until My Birthday</div>
+    </div>
+
+    <script>
+        const targetDate = new Date('2025-03-18T00:00:00') //YEAR-MONTH-DAY, T(time) hr:min:sec
+
+        function updateCountDown() {
+            const currentDate = new Date();
+
+            const timedifference = targetDate - currentDate;
+
+            // to find the the day we use the formula below.
+            const days = Math.floor(timedifference / (1000 * 60 * 60 * 24));
+            // to find the hours we use the formula below.
+            const hours = Math.floor((timedifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            // to find the minutes we use the formula below.
+            const minutes = Math.floor((timedifference % (1000 * 60 * 60)) / (1000 * 60));
+            //to find the seconds we use the formula below.
+            const seconds = Math.floor((timedifference % (1000 * 60)) / 1000);
+
+            document.getElementById('CountDown').innerHTML = `${days} Day ${hours}hr ${minutes}min ${seconds}sec`
+
+            setTimeout(updateCountDown, 1000);
+        }
+        updateCountDown()
+    </script>
+</body>
+
+</html>

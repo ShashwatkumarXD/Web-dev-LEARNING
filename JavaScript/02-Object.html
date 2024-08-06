@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS</title>
+</head>
+
+<body>
+    <script>
+        const product = {
+            name: 'pant',
+            Prize: 2999,
+
+            //Nested Object.
+            Size: {
+                length: '15m',
+                width: '36m'
+            },
+
+            // Function could also be created inside object.
+            brand: function BrandName() {
+                console.log('WestSide');
+            }
+        };
+        console.log(product);
+        product.brand();
+
+        // to check type of console.
+        console.log(typeof product.brand); //Answer (Function)
+        console.log(typeof console); //Answer (Object)
+        console.log(typeof console.log); //Answer (Method)
+        console.log(typeof product); //Answer (Object)
+        console.log(typeof product.Size); //Answer (Nested-Object)
+
+
+        // To Inderstand more properly we use JSON. JSON (javascript object Notation) it is much easier then to understand and mainly used when have to share data between two or more computer.
+        console.log(JSON.stringify(product));
+        console.log(typeof JSON.stringify(product));
+
+        //How to convert JSON back into Javascript Object.
+        const jsonstring = JSON.stringify(product);
+        const result = JSON.parse(jsonstring);
+        console.log(result);
+    </script>
+</body>
+
+</html>
