@@ -1,120 +1,35 @@
-   @import 'https://fonts.googleapis.com/css?family=Raleway';
-   html,
-   body {
-       margin: 0px;
-   }
-   
-   header,
-   footer {
-       font-family: Raleway;
-       margin: 0 auto;
-       padding: 5em 3em;
-       text-align: right;
-       background: #555;
-   }
-   
-   header h1 {
-       color: #AAA;
-       font-size: 40px;
-       font-weight: lighter;
-       margin-bottom: 5px;
-   }
-   
-   header span {
-       color: #222;
-   }
-   
-   footer span {
-       color: #AAA;
-   }
-   
-   div.container {
-       font-family: Raleway;
-       margin: 0 auto;
-       padding: 10px 3em;
-       text-align: right;
-   }
-   
-   div.container a {
-       color: #FFF;
-       text-decoration: none;
-       font: 20px Raleway;
-       margin: 0px 10px;
-       padding: 10px 10px;
-       position: relative;
-       z-index: 0;
-       cursor: pointer;
-   }
-   
-   .brown {
-       background: #000000;
-   }
-   
-   div.highlightTextOut a {
-       color: rgba(255, 255, 255, 0.3);
-   }
-   
-   div.highlightTextOut a:before,
-   div.highlightTextIn a::before {
-       position: absolute;
-       color: #FFF;
-       top: 0px;
-       left: 0px;
-       padding: 10px;
-       overflow: hidden;
-       content: attr(alt);
-       transition: all 0.3s;
-       transform: scale(0.8);
-       opacity: 0;
-   }
-   
-   div.highlightTextOut a:hover:before,
-   div.highlightTextIn a:hover:before {
-       transform: scale(1);
-       opacity: 1;
-   }
-   
-   .resume {
-       color: rgba(255, 255, 255, 0.3);
-       text-decoration: none;
-       font: 20px Raleway;
-       margin: 0px 10px;
-       padding: 10px 10px;
-       position: relative;
-       z-index: 0;
-       cursor: pointer;
-       background-color: transparent;
-       border-color: rgba(255, 255, 255, 0.3);
-       padding-left: 15px;
-       padding-right: 15px;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       border-radius: 2px;
-       cursor: pointer;
-       border-style: solid;
-       transition: opacity 0.7s;
-   }
-   
-   .resume:hover {
-       border-color: white;
-       opacity: 0.7;
-       color: white;
-       box-shadow: 2px 2px 4px black;
-   }
-   
-   body {
-       background-color: #0e0e0e;
-   }
-   
-   nav {
-       position: fixed;
-       top: 0;
-       left: 0;
-       right: 0;
-       z-index: 100;
-       box-shadow: 1px 1px 100px rgb(0, 0, 0);
-       /* background-color: rgb(82, 82, 82);
-       border-bottom-width: 1px;
-       border-bottom-style: solid;
-       border-bottom-color: rgb(76, 76, 76); */
-   }
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.topnav {
+    background-color: #3333337c;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    /* padding-right: 10vw; */
+    padding-right: 20px;
+    padding-bottom: 30px;
+    /* height: 20px; */
+    gap: 40px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    /* padding: 20px; */
+    /* padding-right: 50px; */
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 30px;
+    font-weight: bolder;
+}
+
+
+/* a:hover {
+    background-color: rgb(46, 46, 46);
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.548);
+} */

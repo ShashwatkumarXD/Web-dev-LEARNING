@@ -1,0 +1,78 @@
+.black-document {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* background-color: rgb(23, 23, 23); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.three-dots {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.three-dots.hidden {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    width: 25vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    background-color: rgb(33, 33, 33);
+}
+
+.cut {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav ul {
+    text-align: center;
+    /* height: 100vh; */
+    /* width: 10px; */
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 20px; */
+    list-style: none;
+    padding-top: 60px;
+    /* gap: 2px; */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    /* gap: 10px; */
+    line-height: 50px;
+    /* padding: 100px; */
+    font-weight: bolder;
+}
+
+li {
+    /* border: 1px black solid; */
+    /* box-shadow: inset 1px 1px 10px rgb(45, 45, 45); */
+    border-radius: 2px;
+}
+
+li:hover {
+    background-color: rgb(46, 46, 46);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.548);
+}

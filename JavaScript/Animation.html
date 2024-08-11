@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      width: 400px;
+      height: 400px;
+      background-color: darkseagreen;
+      border: 2px solid black;
+      border-radius: 2px;
+      position: relative;
+    }
+    #inside{
+      height: 50px;
+      width: 50px;
+      background-color: darksalmon;
+      border: 2px solid rgb(47, 47, 47);
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="inside"></div>
+  </div>
+</body>
+<p><button onclick="myMove()">click</button></p>
+<script>
+  function myMove(){
+    let pos =0;
+    const element =document.getElementById('inside');
+    const id= setInterval(frame,100);
+    function frame(){
+      if(pos == 340 ){
+        clearInterval(id);
+      }
+      pos++;
+      element.style.top = pos+ 'px';
+      element.style.left = pos++ + 'px';
+    }
+  }
+</script>
+</html>
