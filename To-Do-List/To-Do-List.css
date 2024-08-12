@@ -82,3 +82,7 @@ ul li {
     user-select: none;
     cursor: pointer;
 }
+
+.done{
+    text-decoration: line-through;
+}
