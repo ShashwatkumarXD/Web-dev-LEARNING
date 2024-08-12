@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #log,#state{
+      width: 400px;
+      height: 50px;
+      border: 1px solid black;
+      padding: 5px;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 20px;
+      background-color: darkgoldenrod;
+      color: white;
+      text-align: center;
+    }
+    .button-container{
+      display: flex;
+      flex-direction: row;
+      gap: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="border: 2px solid black; padding: 2px; border-radius: 10px;">KeyLogger</h1>
+    <p>Im Shashwat Kumar</p>
+    <div class="button-container">
+      <button id="start-btn">Start logging keypresses</button>
+      <button id="stop-btn">Stop logging keypresses</button>
+    </div>
+    <div class="button-container">
+      <div id="log"></div>
+      <div id="state"></div>
+    </div>
+  </div>
+</body>
+<script>
+  const logDiv = document.getElementById('log');
+  const stateDiv = document.getElementById('state');
+  const startbtn = document.getElementById('start-btn');
+  const stopbtn = document.getElementById('stop-btn');
+
+  startbtn.addEventListener('click',()=>{
+    document.addEventListener('keydown',handleDown)
+    document.addEventListener('keyup',handleup)
+    startbtn.disabled = true;
+    stopbtn.disabled =false;
+  })
+
+  stopbtn.addEventListener('click',()=>{
+    document.addEventListener('keydown',handleDown)
+    document.addEventListener('keyup',handleup)
+    logDiv.textContent='';
+    stateDiv.textContent='';
+    stopbtn.disabled = true;
+    startbtn.disabled =false;
+  })
+
+  function handleDown(e){
+    logDiv.textContent = `key ${e.key} Pressed Down`;
+    stateDiv.textContent ='key is Down';
+  }
+  function handleup(e){
+    logDiv.textContent=`key ${e.key} Pressed Up`;
+    stateDiv.textContent='key is Up'
+  }
+</script>
+</html>
